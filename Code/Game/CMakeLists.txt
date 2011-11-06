@@ -1,3 +1,6 @@
-aux_source_directory(. GameSrc)
+include_directories("../C++")
+include_directories("../Engine")
 
-add_library(Game STATIC ${GameSrc})
+file(GLOB_RECURSE Src *.cpp *.h)
+
+add_library(Game STATIC ${Src})

@@ -1,5 +1,5 @@
 include_directories("../C++")
 
-file(GLOB_RECURSE EngineSrc *.cpp *.h)
+file(GLOB_RECURSE Src *.cpp *.h)
 
-add_library(Engine STATIC ${EngineSrc})
+add_library(Engine STATIC ${Src})
